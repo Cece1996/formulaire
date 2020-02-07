@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>formulaire</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<main>
+		<form method="post">
+			<fieldset>
+				<legend>Civilité</legend>
+					<p><label>Nom.s:  <span class="important">*</span></label> <input type="text" name="Nom" autofocus required ></p>
+					<p><label>Prénom.s :<span class="important">*</span></label> <input type="text" name="prenom" required /></p>
+					<p><label>Date et lieu de naissance :<span class="important">*</span>                                                                                                                                                                      </label> <input type="text" name="leu et date de naissance" required ></p>
+					<p>sexe :<span class="important">*</span><input type="radio" name="sexe" value="femme" id="femme" /> <label>femme</label> 
+						<input type="radio" name="sexe" value="homme" id="homme" /> <label>homme</label></p>
+					<p><label>Nationalité :</label> <input type="text" name="Nationalité"></p>
+					<p><label>Adresse e-mail : <span class="important">*</span></label> <input type="email" placeholder="exemple@texte.com" required/></p>
+					<p><label>Tel :<span class="important">*</span></label> <input type="tel" required/></p>
+					<p><label>Mot de passe<span class="important">*</span></label> <input type="password" name="mot_de_passe" required>password </p>
+					<p><label>Confirmer le mot de passe<span class="important">*</span></label> <input type="password" name="mot_de_passe" required>password </p>
+			</fieldset>
+			<fieldset>
+				<legend>Formation</legend>
+				<p>Dernier diplôme obtenu<span class="important">*</span></p>
+			<select name="diplome">
+				<option value="aucun">Aucun</option>
+				<option value="bac">Baccalauréat</option>
+				<option value="bac2">Bac+2</option>
+				<option value="Bac3" selected>Bac+3</option>
+				<option value="Master1">Master 1</option>
+				<option value="Master2">Master 2</option>
+				<option value="Doctorat">Doctorat</option>
+			</select>
+			<p>
+			Centre d'intérêt :<br />
+			<input type="checkbox" name="interet[]" id="musique" /> <label>Musique</label>
+			<input type="checkbox" name="interet[]" id="sport" /> <label>Sport</label>
+			<input type="checkbox" name="interet[]" id="lecture" /> <label>Lecture</label>
+			</p>
+			</fieldset>
+			<fieldset>
+					<legend>Plus d'informations</legend>
+						<label>Ajouter un commentaire (100mots max.)</label>
+						<br />
+						<textarea name="commentaire" rows="10" cols="100" title="insérer un commentaire" maxlength="100" ></textarea><br />
+						<input type="checkbox" name="conditions" id="conditions" required /> <label>j'ai lu et j'accepte les conditions d'utilisations</label><input type="submit" value="Envoyer">
+			</fieldset>
+		</form>
+	</main>
+</body>
+</html>

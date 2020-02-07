@@ -1,0 +1,9 @@
+body{
+	background-image: url("assets/img/gouter.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.important{
+	color: #E53935;
+}
